@@ -20,7 +20,7 @@ vector<int> twoSumHashMap(vector<int> nums, int t)
         //add the element with its index if not found.
         mp[nums[i]] = i;
     }
-    return {-1,-1};
+    return {};
 }
 
 vector<int> twoSum(vector<int> nums, int t)

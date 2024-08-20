@@ -22,20 +22,20 @@ void merge(int arr[], int low, int mid, int high)
             right++;
         }
     }
-
+    //for any remaining element in left side.
     while (left <= mid)
     {
         temp.push_back(arr[left]);
         left++;
     }
-
+    //for any remaining element in right side.
     while (right <= high)
     {
         temp.push_back(arr[right]);
         right++;
     }
 
-
+    //we use this to remerge the temp array into the main array.
     for (int i = low; i <= high; i++)
     {
         arr[i] = temp[i - low];
