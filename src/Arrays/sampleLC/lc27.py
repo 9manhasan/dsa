@@ -15,7 +15,7 @@ def removeElement(nums: List[int], val: int) -> int:
 
 # Example usage
 if __name__ == "__main__":
-    nums = [3, 2, 2, 2,2,2,2,2,3]
+    nums = [3, 2, 2, 2, 2, 2, 2, 2, 3]
     val = 3
     length = removeElement(nums, val)
     print(nums[:length])  # Output: [2, 2]
